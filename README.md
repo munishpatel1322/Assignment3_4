@@ -36,7 +36,7 @@ DB_PASSWORD=your_password`
 
 ### Team Members
 
-Apurva
-Munish
-Maharshi
+Apurva \n
+Munish\n
+Maharshi\n
 Chidera
