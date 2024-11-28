@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Controllers\Reviewer;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class ReviewerLoginController extends Controller
+{
+    // Show the login form
+    public function showLoginForm()
+    {
+        return view('reviewer.login');
+    }
+
+    // Handle the login request
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt(array_merge($credentials, ['role' => 'reviewer']))) {
+            // Authentication passed, redirect to the reviewer dashboard
+            return redirect()->route('reviewer.dashboard');
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records or you are not a reviewer.',
+        ]);
+    }
+
+    // Handle logout
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/reviewer/login');
+    }
+}

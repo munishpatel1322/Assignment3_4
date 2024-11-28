@@ -1,0 +1,13 @@
+<guarantees>
+    <guarantee>
+        <corporate_reference_number>REF001</corporate_reference_number>
+        <guarantee_type>Bank</guarantee_type>
+        <nominal_amount>10000.00</nominal_amount>
+        <nominal_amount_currency>USD</nominal_amount_currency>
+        <expiry_date>2025-12-31</expiry_date>
+        <applicant_name>John Doe</applicant_name>
+        <applicant_address>1234 Main St</applicant_address>
+        <beneficiary_name>Jane Smith</beneficiary_name>
+        <beneficiary_address>5678 Oak St</beneficiary_address>
+    </guarantee>
+</guarantees>

@@ -1,0 +1,13 @@
+[
+    {
+        "corporate_reference_number": "REF001",
+        "guarantee_type": "Bank",
+        "nominal_amount": 10000.00,
+        "nominal_amount_currency": "USD",
+        "expiry_date": "2025-12-31",
+        "applicant_name": "John Doe",
+        "applicant_address": "1234 Main St",
+        "beneficiary_name": "Jane Smith",
+        "beneficiary_address": "5678 Oak St"
+    }
+]
